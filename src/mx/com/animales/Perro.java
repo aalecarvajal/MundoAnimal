@@ -1,6 +1,6 @@
 package mx.com.animales;
 
-public class Perro extends Animal{
+public class Perro extends Animal implements Movible{
     public Perro(String nombre, int edad) {
         super(nombre, edad);
     }
@@ -10,4 +10,10 @@ public class Perro extends Animal{
         System.out.println("El perro hace wouf");
 
     }
+
+    @Override
+    public void moverse(){
+        System.out.println("El perro trota");
+    }
+
 }
